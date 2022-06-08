@@ -22,11 +22,16 @@ for (var i of pronoun) {
         var a = fin[(fin.length)-1];
         var b = fin[(fin.length)-2];
         if ((fin.includes( a, -1) && finDomi.includes( a, -1)) && (fin.includes( b, -2) && finDomi.includes( b, -2))){
-          fin.reverse();
-          //console.log(fin);
-          //console.log(i+i2+i3+domi);
+          var probando = fin.split("");
+          probando.pop();
+          probando.pop();
+          var i6 = "";
+          for( i4 of probando){
+            var i6= i6 + i4;
+         }
+         console.log(i+i2+i6+domi);
         }else{
-          //console.log(i+i2+i3+domi);
+          console.log(i+i2+i3+domi);
         }
       }     
   }
